@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="images/logo.png" type="image/png" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Manasseh Hirekaan</title>
+  </head>
+  <body>
+    <nav class="navbar collapsible container">
+      <div class="navbar__brand">
+        <a href="#"
+          ><img class="img-fluid" src="images/logo.png" alt="my_logo"
+        /></a>
+      </div>
+      <div class="">
+        <svg class="icon navbar__toggler">
+          <use xlink:href="images/menu.svg#menu"></use>
+        </svg>
+      </div>
+      <div class="navbar__links">
+        <ul class="list navbar__list collapsible__content">
+          <li class="list__item nav__item active"><a href="#">Home</a></li>
+          <li class="list__item nav__item"><a href="#">About</a></li>
+          <li class="list__item nav__item">
+            <a href="#projects">Portfolio</a>
+          </li>
+          <li class="list__item nav__item"><a href="#">Services</a></li>
+          <li class="list__item nav__item"><a href="#contact">hire me</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="grid grid--col-2 container hero">
+      <div class="info">
+        <h2 class="info__heading">
+          I am Manasseh <span class="name">Hirekaan</span>
+        </h2>
+        <p class="info__text">
+          This is my official portfolio website to show all my details and work
+          experience in web development
+        </p>
+        <a
+          href="./Documents/Manasseh_Hirekaan_Resume.pdf"
+          download
+          class="btn btn--primary rounded"
+          >Download CV</a
+        >
+      </div>
+      <div class="portfolio--image-container">
+        <!-- <img class="img-fluid blob-image" src="images/blob.png" alt="" /> -->
+        <img
+          src="images/manasseh(1).png"
+          alt=""
+          class="portfolio__image img-fluid"
+        />
+      </div>
+    </div>
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <h2 class="heading">Projects</h2>
+      <div class="grid grid--col-2 grid--col-3 cards">
+        <a href="https://jazzy-syrniki-db99cd.netlify.app/">
+          <div class="card">
+            <img class="img-fluid rounded" src="images/app.jpg" alt="" />
+            <div class="card__body">
+              <h3 class="card__heading">Moshify</h3>
+              <p class="card__text">
+                Moshify is a virtual hosting platform which renders hosting services to its customers at affordable prices.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="https://fyyur-ensd.onrender.com/">
+          <div class="card">
+            <img class="img-fluid rounded" src="images/code.jpg" alt="" />
+            <div class="card__body">
+              <h3 class="card__heading">Fyyur</h3>
+              <p class="card__text">
+                Fyyur is a musical booking site for Artist and Venue Owners to post their venues for artists to perform at their venues.
+              </p>
+            </div>
+          </div>
+        </a>
+        <a href="https://jackfros.pythonanywhere.com/">
+          <div class="card">
+            <img class="img-fluid rounded" src="images/website.jpg" alt="" />
+            <div class="card__body">
+              <h3 class="card__heading">Todo App</h3>
+              <p class="card__text">
+                Todo App as the name implies it is a todo app for you to keep track of your todo's.
+              </p>
+            </div>
+          </div>
+                </div>
+        </a>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2 class="contact__heading text-center">Contact <span class="me">Me!</span></h2>
+      <form action="https://formsubmit.co/b9cc0e3d5739965e11cf6fa63b0d27a2" class="form" method="post" >
+        <!-- honeypot -->
+        <input type="text" name="_honey" style="display: none;" >
+        <!-- Disable Captcha -->
+        <input type="hidden" name="_captcha" value="false">
+        <!-- Success Page -->
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html">
+        <div class="grid grid--col-2 input-group gap-2">
+          <input
+            type="text"
+            name="fullname"
+            id="fullname"
+            class="input rounded-sm"
+            placeholder="Full Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="input rounded-sm"
+            placeholder="Email Address"
+            required
+          />
+        </div>
+        <div class="grid grid--col-2 input-group gap-2">
+            <input
+              type="tel"
+              name="mobile_no"
+              id="mobile_no"
+              class="input rounded-sm"
+              placeholder="Mobile Number"
+            />
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              class="input rounded-sm"
+              placeholder="Email Subject"
+            />
+        </div>
+        <div class="grid input-group">
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            class="textarea rounded-sm"
+            placeholder="your message"
+            required
+          ></textarea>
+        </div>
+        <div class="text-center input-group">
+            <input
+              type="submit"
+              value="Send message"
+              class="btn btn--primary rounded-lg"
+            />
+        </div>
+      </form>
+    </section>
+    <footer class="footer">
+      <p class="footer__copyright">Copyright &copy; 2023</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
