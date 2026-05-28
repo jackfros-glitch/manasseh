@@ -22,3 +22,12 @@ for (let i = 0; i < items.length; i++) {
   this.className += " active";
   });
 }
+
+
+function handleFormSubmit(event){
+    const form = event.target.closest("form")
+    console.log("form submit called ")
+    if (form.reportValidity()) {
+        form.submit();
+      }
+}

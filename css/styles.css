@@ -384,19 +384,19 @@ a{
 
 
 
-/* form */
-.form{
+/* Contact Form */
+.contact-form{
     width: 80%;
     margin: auto;
 }
 @media screen and (min-width: 768px){
-    .form .grid--col-2{
+    .contact-form .grid--col-2{
         grid-template-columns: repeat(2, minmax(20px, 1fr));
     } 
 }
 
 @media screen and (min-width:550px) {
-    .form{
+    .contact-form{
         width: 50%;
     }
 }
@@ -415,8 +415,8 @@ a{
     animation: shine 5s ease-out infinite;
 }
 .contact .input-group .btn::after{
-    width: calc(100% + 6px);
-    height: calc(100% + 6px);
+    width: calc(100% + 3px);
+    height: calc(100% + 3px);
 }
 .contact .input-group .btn{
     border-radius: 12px;
