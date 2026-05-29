@@ -17,9 +17,32 @@ collapsibles.forEach((item)=>{
 let items = document.getElementsByClassName("nav__item");
 for (let i = 0; i < items.length; i++) {
   items[i].addEventListener("click", function() {
-  let current = document.getElementsByClassName("active");
-  current[0].className = current[0].className.replace(" active", "");
+  let current = document.querySelector(".navbar__list .active");
+  current.className = current.className.replace(" active", "");
   this.className += " active";
+  });
+}
+
+
+let languages = document.querySelectorAll('[class*="language-"]');
+for (let i = 0; i < languages.length; i++) {
+  languages[i].addEventListener("click", function() {
+  let current = document.querySelector(".languages-container .active");
+  console.log(current)
+  current.classList.remove("active");
+  this.classList.add("active");
+  const language = this.textContent;
+  const currentPreTag = document.querySelector(`.${current.textContent.toLowerCase()}`);
+  console.log(currentPreTag, "currentPreTag")
+  const nextPreTag = document.querySelector(`.${language.toLowerCase()}`)
+  console.log(nextPreTag, "NextPreTag")
+  currentPreTag.classList.add("hidden")
+  nextPreTag.classList.remove("hidden")
+  // console.log(language);
+  // const languageList = [ "python", "typescript", "Csharp"];
+  // const languagesPreTags = document.querySelectorAll(`[class*="${languageList.join(" ")}"]`)
+  // let codeSnippet = document.querySelector(`${language}`);
+  // codeS
   });
 }
 

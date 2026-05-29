@@ -51,14 +51,99 @@
           </a
         >
       </div>
-      <div class="portfolio--image-container" data-aos="fade-left">
-        <!-- <img class="img-fluid blob-image" src="images/blob.png" alt="" /> -->
+      <!-- porfolio image -->
+      <!-- <div class="portfolio--image-container" data-aos="fade-left">
+        <img class="img-fluid blob-image" src="images/blob.png" alt="" />
         <img
           src="images/manasseh(1).png"
           alt=""
           class="portfolio__image img-fluid"
         />
+      </div> -->
+      <div class="languages-container" style="
+       height: 400px; border: 1px solid gray; border-radius: 10px; overflow-x:auto;
+        overflow-y: auto;">
+        <div style=" display: flex; border-bottom: 1px solid gray;">
+          <div>
+            <ul style="margin-left: 0px; margin-top: 0px; margin-bottom: 0px; display: flex;">
+              <li class="active language-typescript" style="border-top-left-radius: 10px; padding: 15px; cursor: pointer;">Typescript</li>
+              <li class="language-python" style="padding: 15px; cursor: pointer;" >Python</li>
+              <li class="language-Csharp" style="padding: 15px; cursor: pointer;">Csharp</li>
+            </ul>
+          </div>
+          <div style="display: flex; margin-left: auto; margin-right: 8px; gap: 8px; align-items: center;">
+            <span style="display: inline-flex; background-color: #EF4444; width: 15px; height: 15px; border-radius: 50%; "></span>
+            <span style="display: inline-flex; background-color: #EAB308; width: 15px; height: 15px; border-radius: 50%; "></span>
+            <span style="display: inline-flex; background-color: #22C55E; width: 15px; height: 15px; border-radius: 50%; "></span>
+          </div>
+        </div>
+        <div>
+          <pre class="typescript">
+            <code>
+  class Stack {
+
+    public static main(): void {
+        const skills: ReadonlyArray<string> = [
+            "ExpressJs", "NestJs", "React",
+            "PrismaORM", "Mongoose",
+            "Nestjs"
+        ];
+        const passion: string = "Building reliable applications";
+    
+        console.log("Skills: [" + skills.join(", ") + "]");
+        console.log("Passion: " + passion);
+    }
+  }
+      
+  Stack.main();
+            </code>
+          </pre>
+          <pre class="python hidden">
+            <code>
+  class Stack:
+
+    @staticmethod
+    def main() -> None:
+        skills: tuple[str, ...] = (
+            "Python", "Django", "Flask",
+            "Django REST Framework", "PostgreSQL",
+            "Redis", "Celery", "Pytest",
+            "Docker", "Git", "REST APIs",
+            "Microservices", "CI/CD"
+        )
+
+        passion: str = "Building reliable applications"
+
+        print("Skills: [" + ", ".join(skills) + "]")
+        print("Passion: " + passion)
+
+  Stack.main()
+            </code>
+          </pre>
+          <pre class="csharp hidden">
+            <code>
+  using System;
+  using System.Linq;
+
+  class Stack {
+      public static void Main() {
+          var skills = new[] {
+              "ASP.NET Core", "Entity Framework", "xUnit",
+              "RabbitMQ"
+          };
+          var passion = "Building reliable applications";
+          
+          Console.WriteLine($"Skills: [{string.Join(", ", skills)}]");
+          Console.WriteLine($"Passion: {passion}");
+      }
+  }
+
+  Stack.Main();
+            </code>
+          </pre>
+        </div>
       </div>
+
     </div>
     <!-- skills  -->
     <section class="skills " id="skills" >
@@ -312,7 +397,7 @@
       </form>
       <!-- socials--side  -->
     </section>
-    <div class="hidden">
+    <div class="socials--side--container">
       <ul class="socials--side">
         <a href="https://www.linkedin.com/in/manasseh-hirekaan/" target="_blank">
           <li >LinkedIN  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="30" width="30" xmlns="http://www.w3.org/2000/svg" style="color: rgb(77, 181, 255);"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>

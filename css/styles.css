@@ -35,6 +35,13 @@ a{
     text-align: center;
 }
 
+
+/* utility */
+
+
+.hidden{
+    display: none;
+}
 /* rounded */
 .rounded{
     border-radius: 10px;
@@ -52,7 +59,7 @@ a{
     gap: 20px;
 }
 
-.active{
+.navbar__list .active{
     border: 2px solid #03a9f4c4;
 }
 /* list */
@@ -298,6 +305,10 @@ a{
 
 }
 
+.languages-container .active {
+    background-color: #1F2937;
+}
+
 /* Projects */
 .projects{
     margin-top: var(--section-margin);
@@ -489,7 +500,7 @@ a{
         padding-bottom: 15px;
         background-color: rgb(0 0 0/1);
     }
-    .hidden{
+    .socials--side--container{
         display: block;
         position: fixed;
         bottom: 10%;
