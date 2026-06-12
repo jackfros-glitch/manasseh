@@ -1,440 +1,649 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/logo.png" type="image/png" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <!-- cdn's -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <title>Manasseh Hirekaan</title>
-  </head>
-  <body>
-    <nav class="navbar collapsible container">
-      <div class="navbar__brand">
-        <a href="#"
-          ><img class="img-fluid" src="images/logo.png" alt="my_logo"
-        /></a>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+<title>Manasseh Hirekaan — Full Stack Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════
+     NAV
+══════════════════════════════════════ -->
+<nav>
+  <div class="nav-logo">MH.</div>
+  <ul class="nav-links">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Hire me</a>
+</nav>
+
+<!-- ══════════════════════════════════════
+     HERO
+══════════════════════════════════════ -->
+<section id="hero">
+  <div class="hero-blob blob-1"></div>
+  <div class="hero-blob blob-2"></div>
+
+  <div class="hero-inner">
+    <div class="hero-status">
+      <div class="status-dot"></div>
+      Available for remote roles — open to UK &amp; US teams
+    </div>
+
+    <h1 class="hero-name">
+      Manasseh<br>
+      <span class="grad">Hirekaan.</span>
+    </h1>
+
+    <p class="hero-title">
+      Full Stack Engineer &nbsp;·&nbsp; <span>Python · Django · React · TypeScript</span>
+    </p>
+
+    <p class="hero-desc">
+      I build scalable backend systems and production-ready web applications.
+      From real-time data pipelines and payment workflows to LLM-powered chatbots —
+      I take ownership end-to-end and ship things that work.
+      Based in Abuja, Nigeria. Working with teams globally.
+    </p>
+
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Get in touch
+      </a>
+      <a href="https://drive.google.com/uc?export=download&id=1JTzJHvAxaCLX-tBGeSff2Vja9QwJOQ8G" class="btn-secondary" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download CV
+      </a>
+      <a href="https://github.com/jackfros-glitch" class="btn-secondary" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.09.68-.22.68-.49v-1.71c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85 0 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49C19.14 20.65 22 16.8 22 12.26 22 6.58 17.52 2 12 2z"/></svg>
+        GitHub
+      </a>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-item">
+        <div class="stat-num">4<span>+</span></div>
+        <div class="stat-label">Years building</div>
       </div>
-      <div class="">
-        <svg class="icon navbar__toggler">
-          <use xlink:href="images/menu.svg#menu"></use>
-        </svg>
+      <div class="stat-item">
+        <div class="stat-num">5<span>+</span></div>
+        <div class="stat-label">Companies &amp; clients</div>
       </div>
-      <div class="navbar__links">
-        <ul class="list navbar__list collapsible__content">
-          <li class="list__item nav__item active"><a href="#">Home</a></li>
-          <li class="list__item nav__item"><a href="#about-me">About</a></li>
-          <li class="list__item nav__item"><a href="#projects">Portfolio</a></li>
-          <li class="list__item nav__item"><a href="#skills">Skills</a></li>
-          <li class="list__item nav__item"><a href="#contact">hire me</a></li>
-        </ul>
+      <div class="stat-item">
+        <div class="stat-num">10<span>+</span></div>
+        <div class="stat-label">Production projects</div>
       </div>
-    </nav>
-    <div class="grid grid--col-2 container hero">
-      <div class="info" data-aos="fade-right">
-        <h2 class="info__heading">
-          <span class="typed-text"></span>
-        </h2>
-        <p class="info__text">
-          This is my official portfolio website to show all my details and work
-          experience in web development
-        </p>
-        <a
-          href="https://drive.google.com/uc?export=download&id=1VwtJlTG8NSYB0oGQQh1RUsKRTfMMKLoq"
-          download
-          class="btn btn--primary rounded"
-          >
-          Download CV
-          </a
-        >
+      <div class="stat-item">
+        <div class="stat-num">1</div>
+        <div class="stat-label">Open source contributions</div>
       </div>
-      <!-- porfolio image -->
-      <!-- <div class="portfolio--image-container" data-aos="fade-left">
-        <img class="img-fluid blob-image" src="images/blob.png" alt="" />
-        <img
-          src="images/manasseh(1).png"
-          alt=""
-          class="portfolio__image img-fluid"
-        />
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     SKILLS
+══════════════════════════════════════ -->
+<section id="skills" class="section">
+  <div class="max-w">
+    <div class="section-eyebrow reveal">Technical stack</div>
+    <h2 class="section-heading reveal">What I <span>work with</span></h2>
+    <div class="skills-grid reveal">
+      <!-- Backend -->
+      <span class="skill-pill"><span class="dot dot-purple"></span>Python</span>
+      <span class="skill-pill"><span class="dot dot-purple"></span>Django</span>
+      <span class="skill-pill"><span class="dot dot-purple"></span>Django REST Framework</span>
+      <span class="skill-pill"><span class="dot dot-purple"></span>Flask</span>
+      <span class="skill-pill"><span class="dot dot-purple"></span>FastAPI</span>
+      <span class="skill-pill"><span class="dot dot-purple"></span>Node.js</span>
+      <!-- Frontend -->
+      <span class="skill-pill"><span class="dot dot-teal"></span>React</span>
+      <span class="skill-pill"><span class="dot dot-teal"></span>Next.js</span>
+      <span class="skill-pill"><span class="dot dot-teal"></span>TypeScript</span>
+      <span class="skill-pill"><span class="dot dot-teal"></span>JavaScript</span>
+      <span class="skill-pill"><span class="dot dot-teal"></span>Tailwind CSS</span>
+      <!-- Data & Infra -->
+      <span class="skill-pill"><span class="dot dot-amber"></span>PostgreSQL</span>
+      <span class="skill-pill"><span class="dot dot-amber"></span>MySQL</span>
+      <span class="skill-pill"><span class="dot dot-amber"></span>Redis</span>
+      <span class="skill-pill"><span class="dot dot-amber"></span>Docker</span>
+      <span class="skill-pill"><span class="dot dot-amber"></span>Amazon EKS</span>
+      <span class="skill-pill"><span class="dot dot-amber"></span>GitHub Actions</span>
+      <span class="skill-pill"><span class="dot dot-amber"></span>Backblaze B2</span>
+      <!-- AI / Real-time -->
+      <span class="skill-pill"><span class="dot dot-pink"></span>LangChain</span>
+      <!-- <span class="skill-pill"><span class="dot dot-pink"></span>RAG</span> -->
+      <span class="skill-pill"><span class="dot dot-pink"></span>Django Channels</span>
+      <span class="skill-pill"><span class="dot dot-pink"></span>WebSockets</span>
+      <span class="skill-pill"><span class="dot dot-pink"></span>RabbitMQ</span>
+      <span class="skill-pill"><span class="dot dot-pink"></span>WhatsApp Cloud API</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     EXPERIENCE
+══════════════════════════════════════ -->
+<section id="experience" class="section">
+  <div class="max-w">
+    <div class="section-eyebrow reveal">Career path</div>
+    <h2 class="section-heading reveal">Where I've <span>built things</span></h2>
+
+    <div class="timeline-wrapper">
+      <div class="timeline-track"></div>
+
+      <!-- Etravelar -->
+      <!-- <div class="timeline-item reveal">
+        <div class="t-meta">
+          <span class="t-date">2025<br>Incoming</span>
+          <div class="t-dot live"></div>
+        </div>
+        <div class="exp-card">
+          <div class="exp-top">
+            <div>
+              <div class="exp-company">Etravelar</div>
+              <div class="exp-role">Software Engineer · Data Analytics</div>
+            </div>
+            <span class="badge b-incoming">Incoming</span>
+          </div>
+          <p class="exp-desc">Joining a Nigerian digital-first Online Travel Agency as Software Engineer with an additional data analytics mandate. Building internal tooling, WhatsApp chatbot infrastructure, flight commission systems, and data pipelines.</p>
+          <div class="tags">
+            <span class="tag">Django</span><span class="tag">LangChain</span><span class="tag">WhatsApp Cloud API</span><span class="tag">Redis</span><span class="tag">Data Analytics</span>
+          </div>
+        </div>
       </div> -->
-      <div class="languages-container" style="
-       height: 400px; border: 1px solid gray; border-radius: 10px; overflow-x:auto;
-        overflow-y: auto;">
-        <div style=" display: flex; border-bottom: 1px solid gray;">
-          <div>
-            <ul style="margin-left: 0px; margin-top: 0px; margin-bottom: 0px; display: flex;">
-              <li class="active language-typescript" style="border-top-left-radius: 10px; padding: 15px; cursor: pointer;">Typescript</li>
-              <li class="language-python" style="padding: 15px; cursor: pointer;" >Python</li>
-              <li class="language-Csharp" style="padding: 15px; cursor: pointer;">Csharp</li>
-            </ul>
+
+      <!-- Pearmonie -->
+      <div class="timeline-item reveal">
+        <div class="t-meta">
+          <span class="t-date">May 2025<br>Present</span>
+          <div class="t-dot live"></div>
+        </div>
+        <div class="exp-card">
+          <div class="exp-top">
+            <div>
+              <div class="exp-company">Pearmonie</div>
+              <div class="exp-role">Backend Engineer</div>
+            </div>
+            <span class="badge b-live">Current</span>
           </div>
-          <div style="display: flex; margin-left: auto; margin-right: 8px; gap: 8px; align-items: center;">
-            <span style="display: inline-flex; background-color: #EF4444; width: 15px; height: 15px; border-radius: 50%; "></span>
-            <span style="display: inline-flex; background-color: #EAB308; width: 15px; height: 15px; border-radius: 50%; "></span>
-            <span style="display: inline-flex; background-color: #22C55E; width: 15px; height: 15px; border-radius: 50%; "></span>
+          <p class="exp-desc">Engineered a user rewards and gamification system end-to-end. Built customer analytics dashboards, CSV import/export APIs, and contributed to real-time financial transaction systems at scale.</p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Django</span><span class="tag">PostgreSQL</span><span class="tag">Docker</span><span class="tag">Amazon EKS</span><span class="tag">GitHub Actions</span>
           </div>
         </div>
+      </div>
+
+      <!-- Fortuna -->
+      <div class="timeline-item reveal">
+        <div class="t-meta">
+          <span class="t-date">2024</span>
+          <div class="t-dot"></div>
+        </div>
+        <div class="exp-card">
+          <div class="exp-top">
+            <div>
+              <div class="exp-company">Fortuna</div>
+              <div class="exp-role">Software Engineer</div>
+            </div>
+            <span class="badge b-full">Full-time</span>
+          </div>
+          <p class="exp-desc">Built loan origination and disbursement workflows with payment gateway integrations. Transactional systems under TDD discipline — approval pipelines and financial data flows where correctness is non-negotiable.</p>
+          <div class="tags">
+            <span class="tag">Django</span><span class="tag">DRF</span><span class="tag">MySQL</span><span class="tag">Payment Gateways</span><span class="tag">TDD</span><span class="tag">Pytest</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rent-Rite -->
+      <div class="timeline-item reveal">
+        <div class="t-meta">
+          <span class="t-date">2023</span>
+          <div class="t-dot"></div>
+        </div>
+        <div class="exp-card">
+          <div class="exp-top">
+            <div>
+              <div class="exp-company">Rent-Rite</div>
+              <div class="exp-role">Frontend Engineer</div>
+            </div>
+            <span class="badge b-contract">Contract</span>
+          </div>
+          <p class="exp-desc">Developed property listing and booking interfaces with dynamic filters, real-time availability, and third-party integrations. Responsive, cross-browser UI with a focus on performance.</p>
+          <div class="tags">
+            <span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Next.js</span><span class="tag">REST APIs</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- NBS -->
+      <div class="timeline-item reveal">
+        <div class="t-meta">
+          <span class="t-date">2022</span>
+          <div class="t-dot"></div>
+        </div>
+        <div class="exp-card">
+          <div class="exp-top">
+            <div>
+              <div class="exp-company">National Bureau of Statistics</div>
+              <div class="exp-role">Statistician Intern</div>
+            </div>
+            <span class="badge b-intern">Internship</span>
+          </div>
+          <p class="exp-desc">Gathered, analysed, and visualised large national datasets. Applied statistical methods to surface patterns and support federal data-driven reporting — a foundation that informs how I approach data engineering today.</p>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Data Analysis</span><span class="tag">Statistics</span><span class="tag">Data Visualisation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     PROJECTS
+══════════════════════════════════════ -->
+<section id="projects" class="section">
+  <div class="max-w">
+    <div class="section-eyebrow reveal">Selected work</div>
+    <h2 class="section-heading reveal">Things I've <span>shipped</span></h2>
+
+    <div class="projects-grid">
+
+      <!-- Crypto
+      <div class="proj-card reveal">
+        <div class="proj-bar bar-purple"></div>
+        <div class="proj-inner">
+          <div class="proj-top">
+            <div class="proj-icon i-purple">📈</div>
+            <div class="proj-links">
+              <a href="YOUR_GITHUB_LINK" target="_blank" rel="noopener" class="proj-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.09.68-.22.68-.49v-1.71c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85 0 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49C19.14 20.65 22 16.8 22 12.26 22 6.58 17.52 2 12 2z"/></svg>
+                GitHub
+              </a>
+              <a href="YOUR_LIVE_LINK" target="_blank" rel="noopener" class="proj-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+            </div>
+          </div>
+          <div class="proj-title">Real-Time Crypto Streaming Platform</div>
+          <p class="proj-desc">Production-grade real-time cryptocurrency data platform integrating live feeds from Bybit and Binance. Built for high-throughput, low-latency delivery across a Next.js dashboard.</p>
+          <ul class="proj-bullets">
+            <li>WebSocket feeds from Bybit &amp; Binance via MQTT (Mosquitto)</li>
+            <li>Custom <code style="font-size:11px;color:var(--accent)">useCryptoPrice</code> hook for live React state</li>
+            <li>Django Channels + Redis for scalable async message routing</li>
+            <li>NGINX reverse proxy with production deployment</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Django Channels</span><span class="tag">Redis</span><span class="tag">MQTT</span><span class="tag">Next.js</span><span class="tag">WebSockets</span><span class="tag">NGINX</span>
+          </div>
+        </div>
+      </div>
+
+      WhatsApp Chatbot
+      <div class="proj-card reveal">
+        <div class="proj-bar bar-teal"></div>
+        <div class="proj-inner">
+          <div class="proj-top">
+            <div class="proj-icon i-teal">💬</div>
+            <div class="proj-links">
+              <a href="YOUR_GITHUB_LINK" target="_blank" rel="noopener" class="proj-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.09.68-.22.68-.49v-1.71c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85 0 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49C19.14 20.65 22 16.8 22 12.26 22 6.58 17.52 2 12 2z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <div class="proj-title">Etravelar WhatsApp Booking Chatbot</div>
+          <p class="proj-desc">Conversational AI travel assistant built on WhatsApp Cloud API. Handles flight queries, booking flows, and customer support through an LLM-powered Django backend.</p>
+          <ul class="proj-bullets">
+            <li>LangChain RAG pipeline for intelligent travel query handling</li>
+            <li>Redis session management for multi-turn conversations</li>
+            <li>WhatsApp Cloud API webhook integration with Django</li>
+            <li>Async task queue for non-blocking message processing</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Django</span><span class="tag">LangChain</span><span class="tag">Redis</span><span class="tag">WhatsApp API</span><span class="tag">RAG</span><span class="tag">LLM</span>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- PiscesBackend -->
+      <div class="proj-card reveal">
+        <div class="proj-bar bar-amber"></div>
+        <div class="proj-inner">
+          <div class="proj-top">
+            <div class="proj-icon i-amber">☁️</div>
+            <div class="proj-links">
+              <a href="YOUR_GITHUB_LINK" target="_blank" rel="noopener" class="proj-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.09.68-.22.68-.49v-1.71c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85 0 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49C19.14 20.65 22 16.8 22 12.26 22 6.58 17.52 2 12 2z"/></svg>
+                GitHub
+              </a>
+            </div>
+          </div>
+          <div class="proj-title">PiscesBackend</div>
+          <p class="proj-desc">Django backend with production-grade cloud storage via Backblaze B2 and S3-compatible API. Robust file management service with custom auth and full test coverage.</p>
+          <ul class="proj-bullets">
+            <li>Backblaze B2 via <code style="font-size:11px;color:var(--accent)">django-storages</code> S3-compatible layer</li>
+            <li>Custom authentication backends and DRF permission layers</li>
+            <li>Pytest suite with full storage flow coverage</li>
+            <li>Environment-driven config for dev/staging/production</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Django</span><span class="tag">Backblaze B2</span><span class="tag">django-storages</span><span class="tag">DRF</span><span class="tag">Pytest</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flight Commission Calculator -->
+      <!-- <div class="proj-card reveal">
+        <div class="proj-bar bar-pink"></div>
+        <div class="proj-inner">
+          <div class="proj-top">
+            <div class="proj-icon i-pink">✈️</div>
+            <div class="proj-links">
+              <a href="YOUR_GITHUB_LINK" target="_blank" rel="noopener" class="proj-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.09.68-.22.68-.49v-1.71c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85 0 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49C19.14 20.65 22 16.8 22 12.26 22 6.58 17.52 2 12 2z"/></svg>
+                GitHub
+              </a>
+              <a href="YOUR_LIVE_LINK" target="_blank" rel="noopener" class="proj-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+            </div>
+          </div>
+          <div class="proj-title">Flight Commission Calculator</div>
+          <p class="proj-desc">OTA tool for calculating proportional fare commissions on Amadeus/GDS-style itineraries. Built for real Etravelar operations — handles multi-segment, multi-pax fares accurately.</p>
+          <ul class="proj-bullets">
+            <li>OOXML parsing of electronic ticket receipts (.docx)</li>
+            <li>Largest Remainder Method for accurate fare proration</li>
+            <li>Handles multi-pax, multi-segment GDS itineraries</li>
+            <li>In active use at Etravelar for daily fare calculations</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">OOXML</span><span class="tag">GDS / Amadeus</span><span class="tag">Fare Calc</span><span class="tag">OTA</span>
+          </div>
+        </div>
+      </div> -->
+      <!-- Fyyur -->
+      <div class="proj-card reveal">
+        <div class="proj-bar bar-teal"></div>
+        <div class="proj-inner">
+          <div class="proj-top">
+            <div class="proj-icon i-pink">🎵</div>
+            <div class="proj-links">
+              <a href="YOUR_GITHUB_LINK" target="_blank" rel="noopener" class="proj-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.09.68-.22.68-.49v-1.71c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85 0 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49C19.14 20.65 22 16.8 22 12.26 22 6.58 17.52 2 12 2z"/></svg>
+                GitHub
+              </a>
+              <a href="https://fyyur-ensd.onrender.com/" target="_blank" rel="noopener" class="proj-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+            </div>
+          </div>
+          <div class="proj-title">Fyyur</div>
+          <p class="proj-desc">Musical venue booking platform connecting artists with venue owners. Artists can post availability; venue owners list their spaces for performances.</p>
+          <!-- <ul class="proj-bullets">
+            <li>OOXML parsing of electronic ticket receipts (.docx)</li>
+            <li>Largest Remainder Method for accurate fare proration</li>
+            <li>Handles multi-pax, multi-segment GDS itineraries</li>
+            <li>In active use at Etravelar for daily fare calculations</li>
+          </ul> -->
+          <div class="tags">
+            <span class="tag">Python</span><span class="tag">Flask</span><span class="tag">PostgreSQL</span><span class="tag">SQLAlchemy</span>
+          </div>
+        </div>
+      </div>
+      <!-- Moshify -->
+      <div class="proj-card reveal">
+        <div class="proj-bar bar-pink"></div>
+        <div class="proj-inner">
+          <div class="proj-top">
+            <div class="proj-icon i-pink">🚀</div>
+            <div class="proj-links">
+              <a href="#" target="_blank" rel="noopener" class="proj-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.09.68-.22.68-.49v-1.71c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85 0 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49C19.14 20.65 22 16.8 22 12.26 22 6.58 17.52 2 12 2z"/></svg>
+                GitHub
+              </a>
+              <a href="https://jazzy-syrniki-db99cd.netlify.app/" target="_blank" rel="noopener" class="proj-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+            </div>
+          </div>
+          <div class="proj-title">Moshify</div>
+          <p class="proj-desc">Virtual hosting platform offering scalable hosting services. Fully responsive landing page with modern layout, pricing tiers, and testimonials.</p>
+          <!-- <ul class="proj-bullets">
+            <li>OOXML parsing of electronic ticket receipts (.docx)</li>
+            <li>Largest Remainder Method for accurate fare proration</li>
+            <li>Handles multi-pax, multi-segment GDS itineraries</li>
+            <li>In active use at Etravelar for daily fare calculations</li>
+          </ul> -->
+          <div class="tags">
+            <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Textlo -->
+      <div class="proj-card reveal">
+        <div class="proj-bar bar-purple"></div>
+        <div class="proj-inner">
+          <div class="proj-top">
+            <div class="proj-icon i-pink">🎙️</div>
+            <div class="proj-links">
+              <a href="YOUR_GITHUB_LINK" target="_blank" rel="noopener" class="proj-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.09.68-.22.68-.49v-1.71c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85 0 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49C19.14 20.65 22 16.8 22 12.26 22 6.58 17.52 2 12 2z"/></svg>
+                GitHub
+              </a>
+              <a href="https://fyyur-ensd.onrender.com/" target="_blank" rel="noopener" class="proj-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+            </div>
+          </div>
+          <div class="proj-title">Textlo</div>
+          <p class="proj-desc">Speech-to-text conversion tool. Records audio from the browser and transcribes it to text in real time — clean, minimal UI built for usability.</p>
+          <!-- <ul class="proj-bullets">
+            <li>OOXML parsing of electronic ticket receipts (.docx)</li>
+            <li>Largest Remainder Method for accurate fare proration</li>
+            <li>Handles multi-pax, multi-segment GDS itineraries</li>
+            <li>In active use at Etravelar for daily fare calculations</li>
+          </ul> -->
+          <div class="tags">
+            <span class="tag">JavaScript</span><span class="tag">Web Speech API</span><span class="tag">HTML/CSS</span><span class="tag">Assembly AI</span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="proj-card reveal">
+        <div class="proj-bar bar-pink"></div>
+        <div class="proj-inner">
+          <div class="proj-top">
+            <div class="proj-icon i-pink">✅</div>
+            <div class="proj-links">
+              <a href="YOUR_GITHUB_LINK" target="_blank" rel="noopener" class="proj-link">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="12" height="12"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.09.68-.22.68-.49v-1.71c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85 0 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49C19.14 20.65 22 16.8 22 12.26 22 6.58 17.52 2 12 2z"/></svg>
+                GitHub
+              </a>
+              <a href="https://jackfros.pythonanywhere.com/" target="_blank" rel="noopener" class="proj-link">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="12" height="12"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                Live
+              </a>
+            </div>
+          </div>
+          <div class="proj-title" style="font-size:15px; margin-bottom:5px;">Todo App</div>
+          <p class="proj-desc" style="font-size:12px; margin-bottom:10px;">Full-stack task management app with user authentication, CRUD operations, and a clean responsive interface. Deployed on PythonAnywhere.</p>
+          <!-- <ul class="proj-bullets">
+            <li>OOXML parsing of electronic ticket receipts (.docx)</li>
+            <li>Largest Remainder Method for accurate fare proration</li>
+            <li>Handles multi-pax, multi-segment GDS itineraries</li>
+            <li>In active use at Etravelar for daily fare calculations</li>
+          </ul> -->
+          <div class="tags">
+            <span class="tag">Django</span><span class="tag">Python</span><span class="tag">SQLite</span><span class="tag">Bootstrap</span>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     CERTIFICATIONS
+══════════════════════════════════════ -->
+<section id="certifications" class="section">
+  <div class="max-w">
+    <div class="section-eyebrow reveal">Recognition &amp; Training</div>
+    <h2 class="section-heading reveal">Certifications &amp; <span>Courses</span></h2>
+    <div class="cert-grid">
+
+      <!-- ALX-T Udacity Nanodegree -->
+      <div class="cert-card reveal">
+        <div class="cert-shimmer"></div>
+        <div class="cert-icon">🎓</div>
         <div>
-          <pre class="typescript">
-            <code>
-  class Stack {
+          <div class="cert-name">Full Stack Web Developer Nanodegree</div>
+          <div class="cert-issuer">ALX-T · Udacity</div>
+          <div class="cert-date">August 2022</div>
+        </div>
+      </div>
 
-    public static main(): void {
-        const skills: ReadonlyArray<string> = [
-            "ExpressJs", "NestJs", "React",
-            "PrismaORM", "Mongoose",
-            "Nestjs"
-        ];
-        const passion: string = "Building reliable applications";
-    
-        console.log("Skills: [" + skills.join(", ") + "]");
-        console.log("Passion: " + passion);
-    }
-  }
-      
-  Stack.main();
-            </code>
-          </pre>
-          <pre class="python hidden">
-            <code>
-  class Stack:
+      <!-- Django for Everybody - Coursera -->
+      <div class="cert-card reveal">
+        <div class="cert-shimmer"></div>
+        <div class="cert-icon">🐍</div>
+        <div>
+          <div class="cert-name">Django for Everybody Specialization</div>
+          <div class="cert-issuer">Coursera</div>
+          <div class="cert-date">December 2021 &nbsp;·&nbsp; ID: MXRL8AUHRUHU</div>
+        </div>
+      </div>
 
-    @staticmethod
-    def main() -> None:
-        skills: tuple[str, ...] = (
-            "Python", "Django", "Flask",
-            "Django REST Framework", "PostgreSQL",
-            "Redis", "Celery", "Pytest",
-            "Docker", "Git", "REST APIs",
-            "Microservices", "CI/CD"
-        )
+      <!-- Become a Django Developer - LinkedIn -->
+      <div class="cert-card reveal">
+        <div class="cert-shimmer"></div>
+        <div class="cert-icon">💼</div>
+        <div>
+          <div class="cert-name">Become a Django Developer</div>
+          <div class="cert-issuer">LinkedIn Learning</div>
+          <div class="cert-date">June 2021</div>
+        </div>
+      </div>
 
-        passion: str = "Building reliable applications"
+      <!-- Agile Software Development - Coursera -->
+      <div class="cert-card reveal">
+        <div class="cert-shimmer"></div>
+        <div class="cert-icon">⚡</div>
+        <div>
+          <div class="cert-name">Agile Software Development</div>
+          <div class="cert-issuer">Coursera</div>
+          <div class="cert-date">April 2022 &nbsp;·&nbsp; ID: MCF8GCMHYH44</div>
+        </div>
+      </div>
 
-        print("Skills: [" + ", ".join(skills) + "]")
-        print("Passion: " + passion)
+      <!-- HackerRank Python -->
+      <div class="cert-card reveal">
+        <div class="cert-shimmer"></div>
+        <div class="cert-icon">🏅</div>
+        <div>
+          <div class="cert-name">Python (Basic) Certificate</div>
+          <div class="cert-issuer">HackerRank</div>
+          <div class="cert-date">May 2023</div>
+        </div>
+      </div>
 
-  Stack.main()
-            </code>
-          </pre>
-          <pre class="csharp hidden">
-            <code>
-  using System;
-  using System.Linq;
-
-  class Stack {
-      public static void Main() {
-          var skills = new[] {
-              "ASP.NET Core", "Entity Framework", "xUnit",
-              "RabbitMQ"
-          };
-          var passion = "Building reliable applications";
-          
-          Console.WriteLine($"Skills: [{string.Join(", ", skills)}]");
-          Console.WriteLine($"Passion: {passion}");
-      }
-  }
-
-  Stack.Main();
-            </code>
-          </pre>
+      <!-- Open Source -->
+      <div class="cert-card reveal">
+        <div class="cert-shimmer"></div>
+        <div class="cert-icon">🌍</div>
+        <div>
+          <div class="cert-name">Open Source Contributor</div>
+          <div class="cert-issuer">Hacktoberfest · Spotflow</div>
+          <div class="cert-date">2023</div>
         </div>
       </div>
 
     </div>
-    <!-- skills  -->
-    <section class="skills " id="skills" >
-      <h2 class="heading"><span class="heading_text">Skills</span></h2>
-      <div class="container grid grid--col-3 grid--col-2">
-        
-        <div class="card card--html" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">
-          <div style="text-align: center">
-            <img src="images/html.2ba4fabc69a89a8f71e6.png" alt="Html tag" />
-          </div>
-          <p style="text-align: center; color: #000">Html</p>
-        </div>
-        <div class="card card--css" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">
-          <div style="text-align: center">
-            <img src="images/css.69a82c2d9e45c933a9cb.png" alt="Css tag" />
-          </div>
-          <p style="text-align: center; color: #000">css</p>
-        </div>
-        <div class="card card--javascript" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">
-          <div style="text-align: center">
-            <img
-              src="images/javascript.1ccd6ef9bb1f9c84ef00.png"
-              alt="Javascript tag"
-            />
-          </div>
-          <p style="text-align: center; color: #000">Javascript</p>
-        </div>
-        <div class="card card--typescript" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">
-          <div style="text-align: center">
-            <img
-              src="images/typescript.1e3902edbe4c3f2970d8.png"
-              alt="typescript tag"
-            />
-          </div>
-          <p style="text-align: center; color: #000">typescript</p>
-        </div>
-        <div class="card card--react" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">
-          <div style="text-align: center">
-            <img src="images/react.0cf951a69d8e58f83f9d.png" alt="react tag" />
-          </div>
-          <p style="text-align: center; color: #000">react</p>
-        </div>
-        <div class="card card--bootstrap" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">
-          <div style="text-align: center">
-            <img src="images/bootstrap.a339df5a1ec7506d0f11.jpg" alt="bootstrap tag" />
-          </div>
-          <p style="text-align: center; color: #000">bootstrap</p>
-        </div>
-        <div class="card card--tailwindcss" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">
-          <div style="text-align: center">
-            <img src="images/tailwind.e47ac876b8d4d0bba47a.png" alt="tailwindcss tag" />
-          </div>
-          <p style="text-align: center; color: #000">tailwindcss</p>
-        </div>
-        <div class="card card--vite" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">
-          <div style="text-align: center">
-            <img src="images/vite.png" alt="Vite tag" />
-          </div>
-          <p style="text-align: center; color: #000">Vite</p>
-        </div>
-        <div class="card card--redux" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">
-          <div style="text-align: center">
-            <img src="images/redux.png" alt="redux tag" />
-          </div>
-          <p style="text-align: center; color: #000">redux</p>
-        </div>
-        <div class="card card--github" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">
-          <div style="text-align: center">
-            <img src="images/github3.png" alt="Github tag" />
-          </div>
-          <p style="text-align: center; color: #000">Github</p>
-        </div>
-        <div class="card card--python" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">
-          <div style="text-align: center">
-            <img src="images/python.jpeg" alt="python tag" />
-          </div>
-          <p style="text-align: center; color: #000">Python</p>
-        </div>
-        <div class="card card--django" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">
-          <div style="text-align: center">
-            <img src="images/django1.png" alt="Django tag" />
-          </div>
-          <p style="text-align: center; color: #000">Django</p>
-        </div>
-        <div class="card card--flask" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">
-          <div style="text-align: center">
-            <img src="images/flask1.png" alt="flask tag" />
-          </div>
-          <p style="text-align: center; color: #000">flask</p>
-        </div>
-        <div class="card card--node" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">
-          <div style="text-align: center">
-            <img src="images/node.png" alt="node tag" />
-          </div>
-          <p style="text-align: center; color: #000">Node</p>
-        </div>
-        <div class="card card--docker" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">
-          <div style="text-align: center">
-            <img src="images/docker.png" alt="Docker tag" />
-          </div>
-          <p style="text-align: center; color: #000">Docker</p>
-        </div>
-        <div class="card card--postgresql" data-aos="zoom-in-up" data-aos-delay="100" data-aos-duration="1000">
-          <div style="text-align: center">
-            <img src="images/postgres.png" alt="postgresql tag" />
-          </div>
-          <p style="text-align: center; color: #000">postgresql</p>
-        </div>
-      </div>
-    </section>
+  </div>
+</section>
 
-    <section id="about-me">
-      <h2 class="heading"><span class="heading_text">About <span class="me">Me!</span></span></h2>
-      <div class="container">
-        <p data-aos="zoom-in" data-aos-delay="30" data-aos-duration="700">
-          Hello there, I'm <span class="name">Manasseh Hirekaan</span> - a Software Developer. I develop beautiful user-friendly websites that are scalable and maintainable. I like what I currently do (build, solve and debug digital solutions in the web).
-          </p>
-          <br>
-          <p data-aos="zoom-out" data-aos-delay="30" data-aos-duration="500">
-        I have  hands-on experience in identifying web-based user interactions along with designing & implementing highly-responsive user interface components by deploying React concepts following best practices. also experienced with building API's for both web and mobile applications using rest architecture . Proficient in translating designs & wireframes into high-quality code, Also good at monitoring & maintaining frontend performance and troubleshooting & debugging the same time for better overall performance. As a highly skilled software developer, I am adept in creating and implementing user-friendly interfaces, developing and maintaining responsive websites, building secure API's and collaborating with cross-functional teams to deliver high-quality digital experiences. With a keen eye for design and a passion for clean, efficient code, I am committed to staying up-to-date with the latest software development technologies and best practices.
-        </p>
-        <br>
-        <p data-aos="zoom-out" data-aos-delay="30" data-aos-duration="500">
-        Talking about my personality, I describe myself as a result-oriented person, great team player yet competent solo worker and an efficient individual. You can image me as a diligent and easygoing person with a good sense of humour.
-        </p>
-        <br>
-        <p data-aos="zoom-out" data-aos-delay="30" data-aos-duration="500">
-        I enjoy designing new stuff and learning new Technologies. If I'm not on my computer, am travelling, capturing moments or playing musical instruments.
-        </p>
-      </div>
-    </section>
+<!-- ══════════════════════════════════════
+     CONTACT
+══════════════════════════════════════ -->
+<section id="contact" class="section">
+  <div class="contact-inner">
+    <div class="section-eyebrow reveal" style="text-align:center">Let's work together</div>
+    <h2 class="contact-heading reveal">
+      Got a role or<br><span>project in mind?</span>
+    </h2>
+    <p class="contact-sub reveal">
+      I'm actively open to remote full-stack engineering roles with UK and US teams,
+      and available for freelance projects. I respond within 24 hours.
+    </p>
 
-    <!-- Projects -->
-    <section id="projects" class="projects">
-      <h2 class="heading"><span class="heading_text">Projects</span></h2>
-      <div class="container grid grid--col-2 grid--col-3 cards">
-        <a href="https://jazzy-syrniki-db99cd.netlify.app/" target="_blank">
-          <div class="card" data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="1000">
-            <img class="img-fluid rounded" src="images/app.jpg" alt="" />
-            <div class="card__body">
-              <h3 class="card__heading">Moshify</h3>
-              <p class="card__text">
-                Moshify is a virtual hosting platform which renders hosting services to its customers at affordable prices.
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="https://fyyur-ensd.onrender.com/" target="_blank">
-          <div class="card" data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="1000">
-            <img class="img-fluid rounded" src="images/Fyyur.jpg" alt="" />
-            <div class="card__body">
-              <h3 class="card__heading">Fyyur</h3>
-              <p class="card__text">
-                Fyyur is a musical booking site for Artist and Venue Owners to post their venues for artists to perform at their venues.
-              </p>
-            </div>
-          </div>
-        </a>
-        <a href="https://jackfros.pythonanywhere.com/" target="_blank">
-          <div class="card" data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="1000">
-            <img class="img-fluid rounded" src="images/website.jpg" alt="" />
-            <div class="card__body">
-              <h3 class="card__heading">Todo App</h3>
-              <p class="card__text">
-                Todo App as the name implies it is a todo app for you to keep track of your todo's.
-              </p>
-            </div>
-          </div>
-                
-        </a>
-        <a href="https://textlo.netlify.app/" target="_blank">
-          <div class="card" data-aos="zoom-in-down" data-aos-delay="100" data-aos-duration="1000" style="height: 250px;">
-            <img class="img-fluid rounded" src="images/Textlo-lg.png" alt="website_thumbnail" />
-            <div class="card__body">
-              <h3 class="card__heading">Textlo</h3>
-              <p class="card__text">
-                Textlo is a an speech-to-text conversion tool.
-              </p>
-            </div>
-          </div>
-                </div>
-        </a>
-      </div>
-    </section>
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-      <h2 class="contact__heading text-center" data-aos="slide-right" data-aos-delay="50"><span class="heading_text">Contact <span class="me">Me!</span></span></h2>
-      <form action="https://formsubmit.co/b9cc0e3d5739965e11cf6fa63b0d27a2" class="contact-form" method="post" >
-        <!-- honeypot -->
-        <input type="text" name="_honey" style="display: none;" >
-        <!-- Disable Captcha -->
-        <input type="hidden" name="_captcha" value="false">
-        <!-- Success Page -->
-        <input type="hidden" name="_next" value="https://jackfros-glitch.github.io/manasseh/success.html">
-        <div class="grid grid--col-2 input-group gap-2">
-          <input
-            type="text"
-            name="fullname"
-            id="fullname"
-            class="input rounded-sm"
-            placeholder="Full Name"
-            required
-            data-aos="zoom-in" data-aos-delay="30"
-          />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="input rounded-sm"
-            placeholder="Email Address"
-            required
-            data-aos="zoom-in" data-aos-delay="30"
-          />
-        </div>
-        <div class="grid grid--col-2 input-group gap-2">
-            <input
-              type="tel"
-              name="mobile_no"
-              id="mobile_no"
-              class="input rounded-sm"
-              placeholder="Mobile Number"
-              data-aos="slide-right" data-aos-delay="40"
-            />
-            <input
-              type="text"
-              name="subject"
-              id="subject"
-              class="input rounded-sm"
-              placeholder="Email Subject"
-              data-aos="slide-right" data-aos-delay="40"
-            />
-        </div>
-        <div class="grid input-group">
-          <textarea
-            name="message"
-            id="message"
-            cols="30"
-            rows="10"
-            class="textarea rounded-sm"
-            placeholder="your message"
-            required
-            data-aos="fade-up" data-aos-delay="50"
-          ></textarea>
-        </div>
-        <div class="text-center input-group">
-             <span
-              onclick="handleFormSubmit(event)"
-              class="btn btn--primary rounded-lg"
-            >Send message</span>
-        </div>
-      </form>
-      <!-- socials--side  -->
-    </section>
-    <div class="socials--side--container">
-      <ul class="socials--side">
-        <a href="https://www.linkedin.com/in/manasseh-hirekaan/" target="_blank">
-          <li >LinkedIN  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="30" width="30" xmlns="http://www.w3.org/2000/svg" style="color: rgb(77, 181, 255);"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
-          </li>
-        </a>
-        <a href="https://github.com/jackfros-glitch" target="_blank">
-          <li>Github  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="30" width="30" xmlns="http://www.w3.org/2000/svg" style="color: rgb(77, 181, 255);"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
-          </li>
-        </a>
-        <a href="https://twitter.com/awsome_ideas" target="_blank">
-          <li>Twitter  <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="30" width="30" xmlns="http://www.w3.org/2000/svg" style="color: rgb(77, 181, 255);"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
-          </li>
-        </a>
-      </ul>
+    <div class="reveal">
+      <a href="mailto:YOUR_EMAIL_HERE" class="contact-email">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        Send me an email
+      </a>
     </div>
-    <footer class="footer">
-      <ul class="socials">
-        <a href="https://www.linkedin.com/in/manasseh-hirekaan/" target="_blank">
-          <li><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="30" width="30" xmlns="http://www.w3.org/2000/svg" style="color: rgb(77, 181, 255);"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path></svg>
-          </li>
-        </a>
-        <a href="https://github.com/jackfros-glitch" target="_blank">
-          <li><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 496 512" height="30" width="30" xmlns="http://www.w3.org/2000/svg" style="color: rgb(77, 181, 255);"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg>
-          </li>
-        </a>
-        <a href="https://twitter.com/awsome_ideas" target="_blank">
-          <li><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="30" width="30" xmlns="http://www.w3.org/2000/svg" style="color: rgb(77, 181, 255);"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
-          </li>
-        </a>
-       
-      </ul>
-      <p class="footer__copyright"> &copy; Manasseh Hirekaan 2023</p>
-    </footer>
-   
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-     <!-- Load typed library from the CDN -->
-    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+
+    <div class="contact-divider reveal">or find me on</div>
+
+    <div class="social-links reveal">
+      <a href="https://www.linkedin.com/in/manasseh-hirekaan/" target="_blank" rel="noopener" class="social-link">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://github.com/jackfros-glitch" target="_blank" rel="noopener" class="social-link">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.54 2.87 8.39 6.84 9.75.5.09.68-.22.68-.49v-1.71c-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.89 1.57 2.34 1.12 2.91.86.09-.66.35-1.12.63-1.38-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.38 9.38 0 0 1 12 6.84c.85 0 1.71.12 2.51.34 1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9v2.82c0 .27.18.59.69.49C19.14 20.65 22 16.8 22 12.26 22 6.58 17.52 2 12 2z"/></svg>
+        GitHub
+      </a>
+      <a href="https://twitter.com/awsome_ideas" target="_blank" rel="noopener" class="social-link">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        Twitter / X
+      </a>
+      <a href="https://wa.me/+2348078601867" target="_blank" rel="noopener" class="social-link">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     FOOTER
+══════════════════════════════════════ -->
+<footer>
+  <div class="footer-logo">MH.</div>
+  <div class="footer-copy">© 2025 Manasseh Hirekaan · Abuja, Nigeria</div>
+</footer>
+
+<!-- ══════════════════════════════════════
+     SCROLL REVEAL SCRIPT
+══════════════════════════════════════ -->
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } }),
+    { threshold: 0.12 }
+  );
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
+
+</body>
 </html>
